@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Переводчик нефтегазовой отрасли | Клиника перевода СПбГУ | Резюме</title>
+    <meta name="description" content="Переводчики для нефтегазовой отрасли с отраслевым языком. Клиника нефтегазового перевода СПбГУ: реальные проекты, резюме выпускников.">
+    <meta name="keywords" content="переводчик нефтегазовая сфера, переводчик нефтяная компания, резюме переводчик нефтегаз, переводчики для нефтегаза, клиника перевода, СПбГУ">
+    <link rel="canonical" href="https://oilgas-translators.spbu.ru" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #2C2F32;
+            line-height: 1.4;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --primary: #9F2D20;
+            --primary-dark: #7A2217;
+            --primary-light: #fbeae8;
+            --gray-429: #7C878E;
+            --gray-424: #5B6770;
+            --gray-bg: #F4F6F7;
+            --text-dark: #2C2F32;
+            --text-muted: #5B6770;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 32px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 20px -12px rgba(159,45,32,0.4);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1.5px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-light);
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: white;
+            border-bottom: 1px solid #e2e6e9;
+            padding: 16px 0;
+            backdrop-filter: blur(8px);
+            background-color: rgba(255,255,255,0.96);
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .logo {
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--primary-dark);
+            text-decoration: none;
+            letter-spacing: -0.3px;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 48px;
+            width: auto;
+            display: block;
+        }
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: color 0.2s;
+            font-size: 0.95rem;
+        }
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.6rem;
+            cursor: pointer;
+            color: var(--primary-dark);
+        }
+
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid #e2e6e9;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            color: var(--primary-dark);
+        }
+
+        .section-sub {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin-bottom: 48px;
+        }
+
+        .grid-2col {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .grid-3col {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .grid-4col {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 28px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e6e9;
+            transition: all 0.2s;
+        }
+
+        .card:hover {
+            border-color: var(--gray-429);
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.08);
+        }
+
+        .badge {
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .hero {
+            padding: 100px 0 80px;
+            background: linear-gradient(135deg, #F9FBFB 0%, #ffffff 100%);
+        }
+
+        .hero-content {
+            max-width: 860px;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: var(--primary-dark);
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            line-height: 1.5;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .resume-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 28px;
+            margin-bottom: 20px;
+        }
+        .resume-card {
+            background: white;
+            border-radius: 28px;
+            padding: 24px;
+            border: 1px solid #e2e6e9;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.02);
+        }
+        .resume-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 28px -12px rgba(0,0,0,0.1);
+            border-color: var(--gray-429);
+        }
+        .resume-header {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 20px;
+        }
+        .resume-avatar {
+            width: 72px;
+            height: 72px;
+            background: var(--primary-light);
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--primary);
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+        .resume-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .resume-info h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--text-dark);
+        }
+        .resume-info .spec {
+            font-size: 0.85rem;
+            color: var(--primary);
+            background: var(--primary-light);
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-weight: 500;
+        }
+        .resume-details {
+            margin: 16px 0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--text-muted);
+        }
+        .resume-details p {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .resume-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 16px 0;
+        }
+        .tag {
+            background: #F0F4F5;
+            padding: 5px 12px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: #2C5A48;
+        }
+        .btn-small {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: 0.2s;
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .btn-small:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .contact-form-row {
+            background: #F9FBFB;
+            border-radius: 40px;
+            padding: 48px;
+            text-align: center;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.03);
+            border: 1px solid #dee4e7;
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 32px;
+            justify-content: center;
+        }
+
+        .form-group input, .form-group textarea {
+            padding: 14px 20px;
+            border-radius: 48px;
+            border: 1px solid #cfd6da;
+            font-family: inherit;
+            font-size: 1rem;
+            background: white;
+            min-width: 260px;
+            flex: 1;
+            transition: 0.2s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(159,45,32,0.1);
+        }
+
+        .review-card {
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 28px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e2e6e9;
+            transition: 0.2s;
+        }
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .review-avatar {
+            width: 56px;
+            height: 56px;
+            background: var(--primary-light);
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--primary);
+        }
+        .review-author h4 {
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: var(--text-dark);
+        }
+        .review-author p {
+            font-size: 0.8rem;
+            color: var(--gray-424);
+        }
+        .stars {
+            color: #f5b042;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+        .review-text {
+            font-style: normal;
+            line-height: 1.5;
+            color: #2C2F32;
+        }
+
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            margin: 32px 0;
+        }
+        .project-card {
+            background: white;
+            border-radius: 28px;
+            padding: 28px;
+            border: 1px solid #e2e6e9;
+            transition: all 0.2s;
+        }
+        .project-card:hover {
+            border-color: var(--gray-429);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.05);
+        }
+        .project-card h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--primary-dark);
+        }
+        .project-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .project-tag {
+            background: var(--primary-light);
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--primary-dark);
+        }
+        .project-card p {
+            margin-bottom: 12px;
+            line-height: 1.5;
+            color: var(--text-muted);
+        }
+        .project-card strong {
+            color: var(--text-dark);
+        }
+
+        footer {
+            background: var(--gray-424);
+            color: #eef2f4;
+            padding: 48px 0;
+            text-align: center;
+        }
+        footer p {
+            color: #eef2f4;
+        }
+
+        @media (max-width: 800px) {
+            .grid-2col, .grid-3col, .grid-4col {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            section {
+                padding: 56px 0;
+            }
+            .contact-form-row {
+                padding: 32px 24px;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .btn {
+                text-align: center;
+            }
+            .resume-grid {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+                padding-top: 16px;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .nav-container {
+                flex-wrap: wrap;
+            }
+            .logo img {
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo">
+            <img src="logo.png" alt="СПбГУ | Переводчики нефтегаза">
+        </a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Главная</a></li>
+            <li><a href="#solution">Программа</a></li>
+            <li><a href="#clinic">Проекты клиники</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#candidates">Резюме</a></li>
+            <li><a href="#for-companies">Компаниям</a></li>
+            <li><a href="#problem">Статьи</a></li>
+            <li><a href="#request-form">Контакты</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Переводчики для нефтегазовой отрасли</h1>
+            <p>Студенты и выпускники программы <strong>«Межкультурная коммуникация и перевод в нефтегазовом бизнесе» факультета иностранных языков СПбГУ</strong> — высококлассные специалисты-переводчики нефтегазовой отрасли с портфолио реальных кейсов.</p>
+            <div class="hero-buttons">
+                <a href="#candidates" class="btn btn-primary">📄 Получить резюме переводчиков</a>
+                <a href="#request-form" class="btn btn-outline">🤝 Нанять переводчика для нефтяной компании</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- РЕШЕНИЕ -->
+<section id="solution" style="background-color: #F9FBFB;">
+    <div class="container">
+        <div class="section-title">Что дает программа «Межкультурная коммуникация и перевод в нефтегазовом бизнесе» (СПбГУ)</div>
+        <div class="grid-2col">
+            <div>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 24px; display: flex; gap: 14px; align-items: flex-start;">
+                        <span style="background: var(--primary); color: white; border-radius: 30px; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">✓</span>
+                        <span style="font-weight: 500;">Выпускники владеют отраслевой терминологией на уровне носителей (нефтегаз, EPC, инжиниринг).</span>
+                    </li>
+                    <li style="margin-bottom: 24px; display: flex; gap: 14px; align-items: flex-start;">
+                        <span style="background: var(--primary); color: white; border-radius: 30px; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">✓</span>
+                        <span style="font-weight: 500;">Опыт работы в проектной среде и перевода технической документации.</span>
+                    </li>
+                    <li style="margin-bottom: 24px; display: flex; gap: 14px; align-items: flex-start;">
+                        <span style="background: var(--primary); color: white; border-radius: 30px; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">✓</span>
+                        <span style="font-weight: 500;">Коммуникация без пробелов между генподрядчиком, субподрядчиками и заказчиком.</span>
+                    </li>
+                    <li style="margin-bottom: 24px; display: flex; gap: 14px; align-items: flex-start;">
+                        <span style="background: var(--primary); color: white; border-radius: 30px; width: 26px; height: 26px; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">✓</span>
+                        <span style="font-weight: 500;">Немедленное включение в задачи — от перевода контрактов до устного сопровождения.</span>
+                    </li>
+                </ul>
+                <div style="margin-top: 24px; padding: 20px; background: #F0F4F5; border-radius: 28px;">
+                    <p style="font-weight: 700; font-size: 1.2rem; color: var(--primary-dark);">Единственная в России университетская программа, готовящая переводчиков именно для нефтегазовой отрасли.</p>
+                </div>
+            </div>
+            <div class="card" style="background: white;">
+                <div class="badge">СПбГУ — лидер в подготовке</div>
+                <h3 style="margin-bottom: 16px;">Факультет иностранных языков</h3>
+                <p>Преподаватели — практики из крупнейших нефтегазовых компаний. Студенты участвуют в реальных проектах (Усть-Луга, Сахалин-2, Ямал СПГ).</p>
+                <a href="#request-form" class="btn btn-outline" style="margin-top: 24px; display: inline-block;">Запросить резюме выпускников</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ПРОЕКТЫ КЛИНИКИ НЕФТЕГАЗОВОГО ПЕРЕВОДА -->
+<section id="clinic" style="background-color: #ffffff;">
+    <div class="container">
+        <h2 class="section-title">📋 Проекты клиники нефтегазового перевода</h2>
+        <p class="section-sub">Реальные задачи от компаний — реальные результаты студентов</p>
+
+        <div class="projects-list">
+            <div class="project-card">
+                <h4>📑 Локализация технической документации для Амурского ГПЗ</h4>
+                <div class="project-meta">
+                    <span class="project-tag">Тип: письменный перевод + пост-редактирование</span>
+                    <span class="project-tag">Компания: ООО «ТЕКНИП Рус» (с разрешения)</span>
+                </div>
+                <p><strong>Результат:</strong> Создан глоссарий из 1200 терминов, переведено 240 страниц P&amp;ID-схем. Работа опубликована во внутреннем сборнике кафедры «Актуальные проблемы перевода в нефтегазе».</p>
+                <p><strong>Студенты:</strong> Иван Соколов, Екатерина Морозова</p>
+            </div>
+
+            <div class="project-card">
+                <h4>🎙️ Синхронный перевод переговоров «Газпром — CNPC» (учебная симуляция)</h4>
+                <div class="project-meta">
+                    <span class="project-tag">Тип: синхронный перевод (русский-китайский)</span>
+                    <span class="project-tag">Компания: смоделировано по реальным кейсам CNPC</span>
+                </div>
+                <p><strong>Результат:</strong> Разработан терминологический глоссарий по сжиженному газу. Видеозапись перевода используется как учебное пособие на кафедре.</p>
+                <p><strong>Студенты:</strong> Полина Лескова, Алексей Королев</p>
+            </div>
+
+            <div class="project-card">
+                <h4>📄 Перевод контрактной документации для ADNOC (арабский язык)</h4>
+                <div class="project-meta">
+                    <span class="project-tag">Тип: юридический перевод + нотариальное заверение (учебный проект)</span>
+                    <span class="project-tag">Компания: смоделировано на основе реальных контрактов ADNOC</span>
+                </div>
+                <p><strong>Результат:</strong> Создан шаблон контракта переводчика нефтегазовой отрасли с арабским языком. Работа представлена на конференции «Перевод в меняющемся мире».</p>
+                <p><strong>Студенты:</strong> Ахмед Китиев, Мария Волошина</p>
+            </div>
+
+            <div class="project-card">
+                <h4>🛢️ Терминологическая база «Нефтегазовое оборудование: русско-англо-турецкий глоссарий»</h4>
+                <div class="project-meta">
+                    <span class="project-tag">Тип: терминологическая работа + CAT</span>
+                    <span class="project-tag">Компания: по заказу турецкой компании (анонимно)</span>
+                </div>
+                <p><strong>Результат:</strong> 850 терминов с дефинициями, память переводов в формате .tmx. Передана заказчику, получен благодарственный отзыв.</p>
+                <p><strong>Студенты:</strong> Денис Седов, Марина Реброва</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 32px; padding: 24px; background: var(--gray-bg); border-radius: 28px;">
+            <p style="font-size: 1rem; margin-bottom: 16px;"><strong>Хотите дать реальную задачу для клиники?</strong> Студенты решат ваш переводческий кейс под руководством преподавателей-практиков.</p>
+            <a href="#request-form" class="btn btn-primary">Предложить проект для клиники</a>
+        </div>
+    </div>
+</section>
+
+<!-- ОТЗЫВЫ РАБОТОДАТЕЛЕЙ -->
+<section id="reviews" style="background-color: #F9FBFB;">
+    <div class="container">
+        <div class="section-title">Отзывы о работе наших студентов-переводчиков</div>
+        <p class="section-sub">Что говорят руководители нефтяных компаний и EPC-подрядчиков о студентах и выпускниках программы СПбГУ.</p>
+        <div class="grid-2col">
+            <div class="review-card"><div class="review-header"><div class="review-avatar">АИ</div><div class="review-author"><h4>Алексей Игнатов</h4><p>Руководитель международных проектов, «Газпром инжиниринг»</p></div></div><div class="stars">★★★★★</div><p class="review-text">«Студенты программы СПбГУ перевели 400 страниц тендерной документации за 3 недели, точно передавая технические нюансы. Рекомендую как надёжный источник кадров.»</p></div>
+            <div class="review-card"><div class="review-header"><div class="review-avatar">ЕК</div><div class="review-author"><h4>Екатерина Кравцова</h4><p>HR-директор, «Технологии ОФС»</p></div></div><div class="stars">★★★★★</div><p class="review-text">«Кандидат из базы подготовил отраслевой глоссарий и работал синхронно на переговорах с итальянцами. Сэкономили 2 недели поиска.»</p></div>
+            <div class="review-card"><div class="review-header"><div class="review-avatar">ДМ</div><div class="review-author"><h4>Дмитрий Морозов</h4><p>Руководитель проектов, EPC «Стройгазконсалтинг»</p></div></div><div class="stars">★★★★★</div><p class="review-text">«Резюме переводчик нефтегаз из этой программы — готовый специалист. Взяли двух студентов на проект Усть-Луга, через месяц оба получили офферы.»</p></div>
+            <div class="review-card"><div class="review-header"><div class="review-avatar">ТС</div><div class="review-author"><h4>Татьяна Соловьева</h4><p>Head of Localization, «TransOil»</p></div></div><div class="stars">★★★★★</div><p class="review-text">«Постоянно нужны переводчики для нефтегазовой отрасли. Сотрудничаем третий семестр — база даёт кандидатов, которые сразу включаются в заказы.»</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- БАЗА РЕЗЮМЕ (между отзывами и блоком "Для каких компаний") -->
+<section id="candidates">
+    <div class="container">
+        <div class="section-title">База резюме</div>
+        <p class="section-sub">Актуальные анкеты кандидатов с отраслевой специализацией. Готовы предоставить <strong>резюме переводчиков нефтегаз</strong> под ваши требования.</p>
+        <div class="resume-grid">
+            <div class="resume-card">
+                <div class="resume-header">
+                    <div class="resume-avatar">
+                        <img src="spbu_grey.png" alt="Анна Ковалёва">
+                    </div>
+                    <div class="resume-info">
+                        <h3>Анна Ковалёва</h3>
+                        <div class="spec">Технический перевод (нефтегаз)</div>
+                    </div>
+                </div>
+                <div class="resume-details">
+                    <p>🎓 Магистрант 1 курс, СПбГУ</p>
+                    <p>🌐 Английский C2, немецкий B2</p>
+                    <p>📄 Опыт: перевод документации для проекта «Усть-Луга» (LNG)</p>
+                </div>
+                <div class="resume-tags">
+                    <span class="tag">EPC-контракты</span>
+                    <span class="tag">Trados</span>
+                    <span class="tag">API стандарты</span>
+                </div>
+                <a href="#request-form" class="btn-small">📄 Запросить резюме</a>
+            </div>
+            <div class="resume-card">
+                <div class="resume-header">
+                    <div class="resume-avatar">
+                        <img src="spbu_grey.png" alt="Дмитрий Морозов">
+                    </div>
+                    <div class="resume-info">
+                        <h3>Дмитрий Морозов</h3>
+                        <div class="spec">Устный последовательный перевод</div>
+                    </div>
+                </div>
+                <div class="resume-details">
+                    <p>🎓 Магистрант 2 курс, СПбГУ</p>
+                    <p>🌐 Английский C1, французский B2</p>
+                    <p>🎤 Сопровождение переговоров с европейскими вендорами</p>
+                </div>
+                <div class="resume-tags">
+                    <span class="tag">Переговоры</span>
+                    <span class="tag">Нефтегазовое оборудование</span>
+                    <span class="tag">FIDIC</span>
+                </div>
+                <a href="#request-form" class="btn-small">📄 Запросить резюме</a>
+            </div>
+            <div class="resume-card">
+                <div class="resume-header">
+                    <div class="resume-avatar">
+                        <img src="spbu_grey.png" alt="Елена Петрова">
+                    </div>
+                    <div class="resume-info">
+                        <h3>Елена Петрова</h3>
+                        <div class="spec">Юридический перевод (нефтегаз)</div>
+                    </div>
+                </div>
+                <div class="resume-details">
+                    <p>🎓 Выпуск 2024, СПбГУ</p>
+                    <p>🌐 Английский C2, немецкий B2, испанский B2</p>
+                    <p>⚖️ Перевод контрактов, тендерной документации, лицензий</p>
+                </div>
+                <div class="resume-tags">
+                    <span class="tag">Контрактное право</span>
+                    <span class="tag">Force Majeure</span>
+                    <span class="tag">Memsource</span>
+                </div>
+                <a href="#request-form" class="btn-small">📄 Запросить резюме</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ДЛЯ КАКИХ КОМПАНИЙ МЫ ГОТОВИМ ПЕРЕВОДЧИКОВ -->
+<section id="for-companies">
+    <div class="container">
+        <div class="section-title">Для каких компаний мы готовим переводчиков</div>
+        <div class="grid-4col">
+            <div class="card"><strong>🏗️ Генподрядчики и EPC</strong><p style="margin-top: 10px;">Перевод контрактов, рабочей документации.</p></div>
+            <div class="card"><strong>🛢️ Нефтегазовые корпорации</strong><p style="margin-top: 10px;">Международные тендеры, техрегламенты.</p></div>
+            <div class="card"><strong>🔧 Сервисные компании</strong><p style="margin-top: 10px;">Устный и письменный перевод на объектах.</p></div>
+            <div class="card"><strong>🌐 Переводческие бюро</strong><p style="margin-top: 10px;">Узкопрофильные кадры под заказы нефтегаза.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ФОРМАТЫ СОТРУДНИЧЕСТВА -->
+<section style="background-color: #F9FBFB;">
+    <div class="container">
+        <div class="section-title">Как получить переводчика для нефтегазовой сферы (СПбГУ)</div>
+        <div class="grid-3col">
+            <div class="card"><span style="font-weight:800;">📌 Стажировка с тестированием</span><p>Оцените кандидата на реальной задаче.</p></div>
+            <div class="card"><span style="font-weight:800;">⚙️ Проектная работа</span><p>Перевод документации или устное сопровождение.</p></div>
+            <div class="card"><span style="font-weight:800;">🎓 Экспертные лекции</span><p>Ваши специалисты обучают студентов.</p></div>
+            <div class="card"><span style="font-weight:800;">🎯 Прямой подбор</span><p>Под вакансию «переводчик нефтяная компания».</p></div>
+            <div class="card"><span style="font-weight:800;">📊 Кейсы для оценки</span><p>Проверка навыков на отраслевых задачах.</p></div>
+            <div class="card"><span style="font-weight:800;">🤝 Долгосрочный найм</span><p>Выпускники с портфолио и рекомендациями.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- КАК НАНЯТЬ -->
+<section>
+    <div class="container">
+        <div class="section-title">Как нанять переводчика для нефтяной компании</div>
+        <div class="grid-3col" style="gap: 24px;">
+            <div class="card" style="text-align: center;"><span style="font-size: 2rem;">1</span><h3 style="margin: 12px 0;">Оставьте заявку</h3><p>Укажите специализацию: технический, юридический или устный перевод.</p></div>
+            <div class="card" style="text-align: center;"><span style="font-size: 2rem;">2</span><h3 style="margin: 12px 0;">Выберите формат сотрудничества</h3><p>Стажировка, проектная занятость или полный день.</p></div>
+            <div class="card" style="text-align: center;"><span style="font-size: 2rem;">3</span><h3 style="margin: 12px 0;">Получите резюме и кейсы</h3><p>Выбираете лучшего переводчика из пула выпускников СПбГУ.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- СТАТЬИ (размещены в самом низу перед финальным CTA и футером) -->
+<section id="problem" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="section-title">Статьи</div>
+        <div class="grid-2col" style="margin-top: 16px;">
+            <div class="card">
+                <div style="font-size: 2rem; margin-bottom: 12px;">⚠️</div>
+                <h3 style="margin-bottom: 12px;">Язык без отраслевой экспертизы</h3>
+                <p style="color: var(--text-muted);">Кандидаты знают общий английский, но не владеют терминологией upstream/downstream. <strong>Переводчик нефтегазовой сферы</strong> должен разбираться в бурении, переработке и проектной документации.</p>
+            </div>
+            <div class="card">
+                <div style="font-size: 2rem; margin-bottom: 12px;">💸</div>
+                <h3 style="margin-bottom: 12px;">Ошибки в коммуникации = финансовые потери</h3>
+                <p style="color: var(--text-muted);">Неточный перевод тендерной документации или технических условий срывает сроки. Единый стандарт отсутствует, если работаете с внешними подрядчиками.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ФИНАЛЬНЫЙ CTA -->
+<section id="request-form" style="border-bottom: none;">
+    <div class="container">
+        <div class="contact-form-row">
+            <h2 style="font-size: 2rem; margin-bottom: 16px; color: var(--primary-dark);">Получите резюме переводчиков нефтегазовой сферы (СПбГУ)</h2>
+            <p style="margin-bottom: 12px; color: var(--gray-424);">Оставьте заявку — мы подберём специалистов с опытом в нефтегазовых проектах и реальным портфолио</p>
+            <form id="callbackForm" action="#" method="POST">
+                <div class="form-group">
+                    <input type="text" placeholder="Ваше имя" required id="nameInput">
+                    <input type="email" placeholder="E-mail для получения резюме" required id="emailInput">
+                    <input type="tel" placeholder="Телефон" id="phoneInput">
+                </div>
+                <div class="form-group">
+                    <textarea rows="2" placeholder="Опишите потребность: сколько переводчиков, тип задач (письменный/устный, нефтегазовая специфика)..."></textarea>
+                </div>
+                <div class="form-group" style="justify-content: center;">
+                    <button type="submit" class="btn btn-primary" style="background-color: var(--primary); min-width: 220px;">📩 Запросить резюме переводчиков</button>
+                    <a href="mailto:hello@oilgas-translators.spbu.ru" class="btn btn-outline">📧 Связаться с нами</a>
+                </div>
+                <p style="font-size: 0.8rem; margin-top: 24px; opacity: 0.7;">Нажимая «Запросить резюме», вы соглашаетесь с обработкой данных</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2025 | Факультет иностранных языков СПбГУ — программа «Межкультурная коммуникация и перевод в нефтегазовом бизнесе»</p>
+        <p style="margin-top: 12px; font-size: 0.8rem;">hello@oilgas-translators.spbu.ru | +7 (812) 123-45-67</p>
+        <p style="margin-top: 8px; font-size: 0.7rem;">Переводчик нефтегазовая сфера • Переводчик нефтяная компания • Резюме переводчик нефтегаз • Переводчики для нефтегаза • Клиника перевода СПбГУ</p>
+    </div>
+</footer>
+
+<script>
+    (function() {
+        const form = document.getElementById('callbackForm');
+        if(form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('nameInput')?.value.trim() || '';
+                const email = document.getElementById('emailInput')?.value.trim() || '';
+                if(!name || !email) {
+                    alert('Пожалуйста, укажите имя и email для получения резюме переводчиков');
+                    return;
+                }
+                alert(`Спасибо, ${name}! Мы отправим подборку резюме переводчиков нефтегазовой отрасли на ${email} в течение 24 часов.`);
+                form.reset();
+            });
+        }
+
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        if(mobileBtn && navLinks) {
+            mobileBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+        }
+
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if(href && href !== '#') {
+                    const target = document.querySelector(href);
+                    if(target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                        if(navLinks.classList.contains('show')) {
+                            navLinks.classList.remove('show');
+                        }
+                    }
+                }
+            });
+        });
+    })();
+</script>
+</body>
+</html>
